@@ -1,1 +1,18 @@
+# OS
+.DS_Store
+Thumbs.db
 
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Docs build
+*.pdf
+site/
+
+# Secrets (НИКОГДА не коммить)
+.env
+*.pem
+*.key
