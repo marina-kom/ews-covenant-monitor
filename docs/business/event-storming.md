@@ -36,26 +36,6 @@ graph LR
     
     Cmd1 --> Evt1[🟠 Внешние данные загружены]
     Cmd2 --> Evt2[🟠 Отчётность загружена]
-
-graph LR
-    style Evt3 fill:#e67e22,color:#fff
-    style Pol3 fill:#f1c40f,color:#000
-    style Evt4 fill:#e67e22,color:#fff
-    style Evt5 fill:#e67e22,color:#fff
-    style Evt6 fill:#e67e22,color:#fff
-    style Hot1 fill:#e74c3c,color:#fff
-    style Agg2 fill:#2ecc71,color:#fff
-
-    Evt3[🟠 Показатели рассчитаны] --> Pol3[🟡 Политика: Применить DMN-правила]
-    
-    Pol3 --> Evt4[🟠 Ковенанта нарушена 🔴]
-    Pol3 --> Evt5[🟠 Ковенанта в жёлтой зоне]
-    Pol3 --> Evt6[🟠 Ковенанта в зелёной зоне]
-    
-    Evt4 --> Agg2[🟢 Алерт]
-    Agg2 --> Evt7[🟠 Алерт создан]
-    
-    Evt4 -.-> Hot1[🔴 Hot Spot: Alert Fatigue!<br/>Много ложных срабатываний<br/>из-за устаревших данных]
     
     Evt1 --> Pol1[🟡 Политика: При поступлении данных → запустить расчёт]
     Evt2 --> Pol1
